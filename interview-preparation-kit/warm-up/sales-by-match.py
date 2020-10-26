@@ -5,12 +5,12 @@ import re
 import sys
 
 def count_freq_in_list(num, ar):
-    count = 0
-    for elem in ar:
+count = 0
+for elem in ar:
 
-        if elem == num:
-            count +=1
-    return count
+    if elem == num:
+        count +=1
+return count
 
 def get_dict_with_freqs(ar):
         dict_freq = {num: count_freq_in_list(num, ar) for num in set(ar)}
